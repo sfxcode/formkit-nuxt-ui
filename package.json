@@ -89,26 +89,26 @@
     "@formkit/addons": "^1.7.2",
     "@formkit/nuxt": "^1.7.2",
     "@nuxt/kit": "^4.4.2",
-    "@nuxt/ui": "^4.5.1"
+    "@nuxt/ui": "^4.6.0"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.98",
-    "@iconify-json/simple-icons": "^1.2.74",
-    "@nuxt/devtools": "^3.2.3",
+    "@iconify-json/lucide": "^1.2.100",
+    "@iconify-json/simple-icons": "^1.2.75",
+    "@nuxt/devtools": "^3.2.4",
     "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/module-builder": "^1.0.2",
     "@nuxt/schema": "^4.4.2",
     "@nuxt/test-utils": "^4.0.0",
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "mkdist": "^2.4.1",
     "nuxt": "^4.4.2",
     "sass-embedded": "^1.98.0",
     "typescript": "~5.9.3",
     "unbuild": "^3.6.1",
-    "vitest": "^4.1.0",
-    "vue-tsc": "^3.2.5"
+    "vitest": "^4.1.2",
+    "vue-tsc": "^3.2.6"
   }
 }
