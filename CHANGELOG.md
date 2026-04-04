@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.8.7
+
+[compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.8.6...v0.8.7)
+
+### 🏡 Chore
+
+- Update dependencies to latest versions ([6a06e01](https://github.com/sfxcode/nuxt-ui-formkit/commit/6a06e01))
+- Update package manager to pnpm@10.33.0 ([e89039e](https://github.com/sfxcode/nuxt-ui-formkit/commit/e89039e))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v0.8.6
 
 [compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.8.5...v0.8.6)
