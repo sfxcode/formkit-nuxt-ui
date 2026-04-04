@@ -86,27 +86,27 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@formkit/addons": "^1.7.2",
-    "@formkit/nuxt": "^1.7.2",
+    "@formkit/addons": "^2.0.0",
+    "@formkit/nuxt": "^2.0.0",
     "@nuxt/kit": "^4.4.2",
-    "@nuxt/ui": "^4.6.0"
+    "@nuxt/ui": "^4.6.1"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.100",
-    "@iconify-json/simple-icons": "^1.2.75",
-    "@nuxt/devtools": "^3.2.4",
+    "@iconify-json/lucide": "^1.2.101",
+    "@iconify-json/simple-icons": "^1.2.76",
+    "@nuxt/devtools": "4.0.0-alpha.3",
     "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/module-builder": "^1.0.2",
     "@nuxt/schema": "^4.4.2",
     "@nuxt/test-utils": "^4.0.0",
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "mkdist": "^2.4.1",
     "nuxt": "^4.4.2",
-    "sass-embedded": "^1.98.0",
-    "typescript": "~5.9.3",
+    "sass-embedded": "^1.99.0",
+    "typescript": "~6.0.2",
     "unbuild": "^3.6.1",
     "vitest": "^4.1.2",
     "vue-tsc": "^3.2.6"
