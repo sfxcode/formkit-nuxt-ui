@@ -24,4 +24,17 @@ export default defineNuxtConfig({
 
   // FormKit Nuxt UI Module Configuration
   formkitNuxtUi: { },
+
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-kit',
+        '@vue/devtools-core',
+        '@formkit/core',
+        '@formkit/addons',
+        '@formkit/i18n',
+      ]
+    }
+  }
+
 })
