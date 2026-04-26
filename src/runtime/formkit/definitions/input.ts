@@ -65,7 +65,7 @@ export const nuxtUIInputTimeDefinition: FormKitTypeDefinition = createInput(FUIn
 })
 
 export const nuxtUIListboxDefinition: FormKitTypeDefinition = createInput(FUListbox, {
-  props: ['options', 'as', 'size', 'by', 'orientation', 'selectionBehavior', 'disabled', 'defaultValue', 'multiple', 'valueKey', 'labelKey', 'descriptionKey', 'loading', 'loadingIcon', 'filter', 'filterFields', 'ignoreFilter', 'selectedIcon', 'virtualize', 'highlight', 'highlightOnHover', 'autofocus', 'autofocusDelay', 'searchTerm', 'ui'],
+  props: ['options', 'as', 'size', 'by', 'orientation', 'selectionBehavior', 'disabled', 'defaultValue', 'multiple', 'valueKey', 'labelKey', 'descriptionKey', 'loading', 'loadingIcon', 'filter', 'filterFields', 'ignoreFilter', 'selectedIcon', 'virtualize', 'highlight', 'highlightOnHover', 'autofocus', 'autofocusDelay', 'searchTerm', 'ui', 'displayMode', 'transferLeftHeaderText', 'transferRightHeaderText', 'transferAll', 'transferHeaderClass'],
   family: 'NuxtUIInput',
 })
 
