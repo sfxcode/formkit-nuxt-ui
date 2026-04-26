@@ -34,7 +34,7 @@
     "design-system",
     "form-builder"
   ],
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
   "type": "module",
   "exports": {
     ".": {
@@ -89,11 +89,11 @@
     "@formkit/addons": "^2.0.0",
     "@formkit/nuxt": "^2.0.0",
     "@nuxt/kit": "^4.4.2",
-    "@nuxt/ui": "^4.6.1"
+    "@nuxt/ui": "^4.7.0"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.102",
+    "@iconify-json/lucide": "^1.2.103",
     "@iconify-json/simple-icons": "^1.2.79",
     "@nuxt/devtools": "4.0.0-alpha.4",
     "@nuxt/eslint-config": "^1.15.2",
