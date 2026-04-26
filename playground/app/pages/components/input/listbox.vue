@@ -132,6 +132,26 @@ const listboxSchema = [
     valueKey: 'value',
   },
 ]
+
+const transferSchema = [
+  {
+    $formkit: 'nuxtUIListbox',
+    id: 'listbox-transfer',
+    name: 'listboxTrannsfer1',
+    label: 'Transfer Listbox',
+    class: 'h-60',
+    displayMode: 'transfer',
+    help: 'Select Items to transfer',
+    options: users,
+    filter: true,
+    transferHeaderClass: 'text-sm text-gray-500 font-medium',
+    transferLeftHeaderText: 'Available',
+    transferRightHeaderText: 'Selected',
+    transferAll: true,
+  },
+]
+
+const trasnferData = { listboxTrannsfer1: users.slice(1, 3) }
 </script>
 
 <template>
@@ -209,8 +229,20 @@ const listboxSchema = [
             :schema="listboxSchema.slice(8, 11)"
           />
         </section>
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">
+            Transfer List
+          </h2>
+          <p class="text-muted-foreground mb-6">
+            Transfer example.
+          </p>
+          <FUDataEdit
+            :data="trasnferData"
+            :schema="transferSchema"
+            debug-data
+          />
+        </section>
       </div>
     </UContainer>
   </div>
 </template>
-
