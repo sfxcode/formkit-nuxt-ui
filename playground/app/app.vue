@@ -62,6 +62,12 @@ const items = ref<NavigationMenuItem[]>([
         to: '/components/input/input-time',
       },
       {
+        label: 'Listbox',
+        icon: 'i-lucide-list',
+        description: 'Listbox component with filtering, grouping, and multiple selection.',
+        to: '/components/input/listbox',
+      },
+      {
         label: 'PinInput',
         icon: 'i-lucide-lock',
         description: 'PIN/OTP input component for secure code entry.',
