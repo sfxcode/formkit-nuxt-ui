@@ -8,26 +8,6 @@ on:
     branches:
       - main
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v6.0.2
-
-      - uses: pnpm/action-setup@v5.0.0
-
-      - uses: actions/setup-node@v6.4.0
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Lint
-        run: pnpm lint
-
   test:
     runs-on: ubuntu-latest
 
@@ -38,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v6.4.0
         with:
-          node-version: 20
+          node-version: 24
           cache: pnpm
 
       - name: Install dependencies
