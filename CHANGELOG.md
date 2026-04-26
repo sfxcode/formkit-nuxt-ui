@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.9.2
+
+[compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.9.1...v0.9.2)
+
+### 🚀 Enhancements
+
+- Enhance Listbox component with transfer mode and additional props ror transfer list ([1209fcb](https://github.com/sfxcode/nuxt-ui-formkit/commit/1209fcb))
+- Add transfer mode to Listbox component with new schema and example ([a05446d](https://github.com/sfxcode/nuxt-ui-formkit/commit/a05446d))
+- Update Listbox component documentation and add success styling ([25b0d05](https://github.com/sfxcode/nuxt-ui-formkit/commit/25b0d05))
+
+### 🩹 Fixes
+
+- Update footer to reflect Nuxt UI version 4.7.0 ([7932e54](https://github.com/sfxcode/nuxt-ui-formkit/commit/7932e54))
+
+### 💅 Refactors
+
+- Clean up Listbox component by removing debug data and updating types for transfer lists ([99066fa](https://github.com/sfxcode/nuxt-ui-formkit/commit/99066fa))
+
+### 🏡 Chore
+
+- Update dependencies and package manager version NuxtUI 4.7.0 ([ead6c64](https://github.com/sfxcode/nuxt-ui-formkit/commit/ead6c64))
+- Add Vite optimization for FormKit dependencies in nuxt.config.ts ([ced8854](https://github.com/sfxcode/nuxt-ui-formkit/commit/ced8854))
+- Add Listbox component and update input definitions ([0e6566b](https://github.com/sfxcode/nuxt-ui-formkit/commit/0e6566b))
+- Add Listbox component with filtering, grouping, and multiple selection ([fca865a](https://github.com/sfxcode/nuxt-ui-formkit/commit/fca865a))
+- Update CI configuration to remove lint job and upgrade Node.js version to 24 ([d3e4e55](https://github.com/sfxcode/nuxt-ui-formkit/commit/d3e4e55))
+- Update release script to use minor versioning for changelogen ([2919f03](https://github.com/sfxcode/nuxt-ui-formkit/commit/2919f03))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v0.9.1
 
 [compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.9.0...v0.9.1)
