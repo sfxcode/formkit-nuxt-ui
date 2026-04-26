@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.10.0
+
+[compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.9.2...v0.10.0)
+
+### 🩹 Fixes
+
+- Update release script to use major version bump for changelog ([1a05662](https://github.com/sfxcode/nuxt-ui-formkit/commit/1a05662))
+
+### 🏡 Chore
+
+- Add jobs section to CI configuration ([0d2f041](https://github.com/sfxcode/nuxt-ui-formkit/commit/0d2f041))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v0.9.2
 
 [compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.9.1...v0.9.2)
