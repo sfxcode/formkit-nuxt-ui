@@ -225,7 +225,7 @@ const items = ref<NavigationMenuItem[]>([
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          Built with Nuxt UI 4.7.0 • © {{ new Date().getFullYear() }}
         </p>
       </template>
 
