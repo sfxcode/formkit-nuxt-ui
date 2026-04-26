@@ -63,9 +63,9 @@ const props = defineProps({
 const { handleInput, handleChange, isInvalid, styleClass, modelValue, items, validSlotNames } = useFormKitInput(props.context)
 
 // Transfer List
-const targetItems = ref<any[]>(modelValue.value || [])
-const sourceSelection = ref<any[]>([])
-const targetSelection = ref<any[]>([])
+const targetItems = ref<ListboxItem[]>(modelValue.value || [])
+const sourceSelection = ref<ListboxItem[]>([])
+const targetSelection = ref<ListboxItem[]>([])
 
 const transferHeaderClass = computed(() => {
   const baseClass = 'text-sm font-medium text-highlighted'

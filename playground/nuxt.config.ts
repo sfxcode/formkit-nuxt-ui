@@ -22,9 +22,6 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2026-01-08',
 
-  // FormKit Nuxt UI Module Configuration
-  formkitNuxtUi: { },
-
   vite: {
     optimizeDeps: {
       include: [
@@ -33,8 +30,11 @@ export default defineNuxtConfig({
         '@formkit/core',
         '@formkit/addons',
         '@formkit/i18n',
-      ]
-    }
-  }
+      ],
+    },
+  },
+
+  // FormKit Nuxt UI Module Configuration
+  formkitNuxtUi: { },
 
 })

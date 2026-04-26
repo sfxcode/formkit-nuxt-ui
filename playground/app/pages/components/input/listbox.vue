@@ -239,7 +239,6 @@ const trasnferData = { listboxTrannsfer1: users.slice(1, 3) }
           <FUDataEdit
             :data="trasnferData"
             :schema="transferSchema"
-            debug-data
           />
         </section>
       </div>
