@@ -12,6 +12,7 @@ import type {
   InputNumberSlots,
   InputTagsSlots,
   InputTimeSlots,
+  ListboxSlots,
   SwitchSlots,
 } from '@nuxt/ui'
 
@@ -53,6 +54,9 @@ declare module '@formkit/inputs' {
     }
     nuxtUIInputTime: {
       type: 'nuxtUIInputTime'
+    }
+    nuxtUIListbox: {
+      type: 'nuxtUIListbox'
     }
     nuxtUIPinInput: {
       type: 'nuxtUIPinInput'
@@ -105,6 +109,7 @@ declare module '@formkit/inputs' {
     nuxtUIInputNumber: MergeSlots<FormKitBaseSlots<Props>, InputNumberSlots>
     nuxtUIInputTags: MergeSlots<FormKitBaseSlots<Props>, InputTagsSlots>
     nuxtUIInputTime: MergeSlots<FormKitBaseSlots<Props>, InputTimeSlots>
+    nuxtUIListbox: MergeSlots<FormKitBaseSlots<Props>, ListboxSlots>
     nuxtUIRadioGroup: MergeSlots<FormKitBaseSlots<Props>, RadioGroupSlots>
     nuxtUISelect: MergeSlots<FormKitBaseSlots<Props>, SelectSlots>
     nuxtUISelectMenu: MergeSlots<FormKitBaseSlots<Props>, SelectMenuSlots>

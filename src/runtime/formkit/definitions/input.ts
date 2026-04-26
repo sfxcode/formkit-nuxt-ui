@@ -10,6 +10,7 @@ import FUInputMenu from '../../../runtime/components/inputs/FUInputMenu.vue'
 import FUInputNumber from '../../../runtime/components/inputs/FUInputNumber.vue'
 import FUInputTags from '../../../runtime/components/inputs/FUInputTags.vue'
 import FUInputTime from '../../../runtime/components/inputs/FUInputTime.vue'
+import FUListbox from '../../../runtime/components/inputs/FUListbox.vue'
 import FUPinInput from '../../../runtime/components/inputs/FUPinInput.vue'
 import FURadioGroup from '../../../runtime/components/inputs/FURadioGroup.vue'
 import FUSelect from '../../../runtime/components/inputs/FUSelect.vue'
@@ -60,6 +61,11 @@ export const nuxtUIInputTagsDefinition: FormKitTypeDefinition = createInput(FUIn
 
 export const nuxtUIInputTimeDefinition: FormKitTypeDefinition = createInput(FUInputTime, {
   props: ['color', 'variant', 'size', 'highlight', 'fixed', 'autofocus', 'autofocusDelay', 'defaultValue', 'placeholder', 'defaultPlaceholder', 'hourCycle', 'step', 'stepSnapping', 'granularity', 'hideTimeZone', 'maxValue', 'minValue', 'icon', 'avatar', 'leading', 'leadingIcon', 'trailing', 'trailingIcon', 'loading', 'loadingIcon', 'ui'],
+  family: 'NuxtUIInput',
+})
+
+export const nuxtUIListboxDefinition: FormKitTypeDefinition = createInput(FUListbox, {
+  props: ['options', 'as', 'size', 'by', 'orientation', 'selectionBehavior', 'disabled', 'defaultValue', 'multiple', 'valueKey', 'labelKey', 'descriptionKey', 'loading', 'loadingIcon', 'filter', 'filterFields', 'ignoreFilter', 'selectedIcon', 'virtualize', 'highlight', 'highlightOnHover', 'autofocus', 'autofocusDelay', 'searchTerm', 'ui'],
   family: 'NuxtUIInput',
 })
 
