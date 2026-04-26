@@ -18,7 +18,7 @@ FormKit Nuxt UI bridges the gap between [FormKit](https://formkit.com/)'s powerf
 
 ## Features
 
-✨ **16 Input Components** - Complete set of FormKit-wrapped Nuxt UI input components
+✨ **17 Input Components** - Complete set of FormKit-wrapped Nuxt UI input components
 - `nuxtUICheckbox` - Single checkbox with label and description
 - `nuxtUICheckboxGroup` - Multiple checkbox selection
 - `nuxtUIColorPicker` - Color selection with multiple formats
@@ -28,6 +28,7 @@ FormKit Nuxt UI bridges the gap between [FormKit](https://formkit.com/)'s powerf
 - `nuxtUIInputNumber` - Number input with increment/decrement buttons
 - `nuxtUIInputTags` - Tag input with custom delimiters
 - `nuxtUIInputTime` - Time picker with 12/24-hour format
+- `nuxtUIListbox` - Listbox for single/multiple selection with filtering
 - `nuxtUIPinInput` - PIN/OTP entry component
 - `nuxtUIRadioGroup` - Radio button group for single selection
 - `nuxtUISelect` - Select dropdown with search
@@ -289,6 +290,7 @@ The playground includes comprehensive examples for all components:
 - [InputNumber](./playground/app/pages/components/input/input-number.vue)
 - [InputTags](./playground/app/pages/components/input/input-tags.vue)
 - [InputTime](./playground/app/pages/components/input/input-time.vue)
+- [Listbox](./playground/app/pages/components/input/listbox.vue)
 - [PinInput](./playground/app/pages/components/input/pin-input.vue)
 - [RadioGroup](./playground/app/pages/components/input/radio-group.vue)
 - [Select](./playground/app/pages/components/input/select.vue)
@@ -375,6 +377,7 @@ export default defineFormKitConfig({
 import { 
   nuxtUICheckboxDefinition,
   nuxtUIInputDefinition,
+  nuxtUIListboxDefinition,
   nuxtUISelectDefinition 
 } from '@sfxcode/nuxt-ui-formkit/definitions'
 
@@ -382,6 +385,7 @@ export default defineFormKitConfig({
   inputs: {
     nuxtUICheckbox: nuxtUICheckboxDefinition,
     nuxtUIInput: nuxtUIInputDefinition,
+    nuxtUIListbox: nuxtUIListboxDefinition,
     nuxtUISelect: nuxtUISelectDefinition,
   },
 })

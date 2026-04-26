@@ -65,6 +65,7 @@ const items = ref<NavigationMenuItem[]>([
         label: 'Listbox',
         icon: 'i-lucide-list',
         description: 'Listbox component with filtering, grouping, and multiple selection.',
+        class: 'text-success',
         to: '/components/input/listbox',
       },
       {
