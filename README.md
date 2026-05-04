@@ -28,7 +28,7 @@ FormKit Nuxt UI bridges the gap between [FormKit](https://formkit.com/)'s powerf
 - `nuxtUIInputNumber` - Number input with increment/decrement buttons
 - `nuxtUIInputTags` - Tag input with custom delimiters
 - `nuxtUIInputTime` - Time picker with 12/24-hour format
-- `nuxtUIListbox` - Listbox for single/multiple selection with filtering
+- `nuxtUIListbox` - Listbox for single/multiple selection with filtering (for use with transfer mode lucide icons must be installed additionally)
 - `nuxtUIPinInput` - PIN/OTP entry component
 - `nuxtUIRadioGroup` - Radio button group for single selection
 - `nuxtUISelect` - Select dropdown with search
