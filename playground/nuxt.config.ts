@@ -20,6 +20,10 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
   },
+
+  experimental: {
+    viteEnvironmentApi: true,
+  },
   compatibilityDate: '2026-01-08',
 
   vite: {
