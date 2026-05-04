@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.11.0
+
+[compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.10.0...v0.11.0)
+
+### 🚀 Enhancements
+
+- Enable experimental viteEnvironmentApi in nuxt.config.ts - fixes problem with actual nuxt 4.4.4 version and ssr: false ([3713c89](https://github.com/sfxcode/nuxt-ui-formkit/commit/3713c89))
+
+### 🩹 Fixes
+
+- Update project title in README for clarity ([ffd5764](https://github.com/sfxcode/nuxt-ui-formkit/commit/ffd5764))
+- Clarify usage of nuxtUIListbox in README ([27e7599](https://github.com/sfxcode/nuxt-ui-formkit/commit/27e7599))
+- Update dependencies in package.json for compatibility and improvements ([d0d3fd8](https://github.com/sfxcode/nuxt-ui-formkit/commit/d0d3fd8))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v0.10.0
 
 [compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.9.2...v0.10.0)
