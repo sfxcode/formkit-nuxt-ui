@@ -1,14 +1,13 @@
 <script setup lang='ts'>
-const { addElement, addList, addListGroup } = useFormKitSchema()
-const { addInsertButton, addGroupButtons, addListGroupFunctions } = useFormKitRepeater()
+const data = ref()
 
-const defaultData = { name: 'Fighter', attacks: [{ name: 'Sword', damage: '2D20' }, { name: 'Dagger', damage: '2D6' }] }
 function createDefaultValue(): object {
   return { name: 'Bow', damage: '1D6+4' }
 }
-addListGroupFunctions(defaultData, createDefaultValue())
 
-const data = ref(defaultData)
+onMounted(() => {
+  data.value = { name: 'Fighter', attacks: [{ name: 'Sword', damage: '2D6' }, { name: 'Dagger', damage: '1D6' }, { name: 'Spear', damage: '1D6+2' }] }
+})
 
 async function submitHandler() {
   console.log('Form Submitted ...', 'Form submitted successfully')
@@ -21,27 +20,37 @@ const schema = [
     name: 'name',
     class: 'w-32',
   },
+  {
+    $formkit: 'nuxtUIRepeater',
+    name: 'attacks',
+    label: 'Attacks',
+    help: 'Attacks List Demo - Use Buttons to clone, move and delete',
+    itemListClass: '',
+    itemClass: 'flex gap-2',
+    buttonsOuterClass: '',
+    buttonsInnerClass: 'flex gap-1',
+    buttonsLabel: 'Actions',
+    addButtonLabel: 'Add Attack',
+    addButtonClass: 'mb-2',
+    alwaysDisplayAddButton: false,
+    displayCloneButton: true,
+    newItem: createDefaultValue(),
+    children: [
+      {
+        $formkit: 'nuxtUIInput',
+        label: 'Name',
+        name: 'name',
+        outerClass: 'w-42',
+      },
+      {
+        $formkit: 'nuxtUIInput',
+        label: 'Damage',
+        name: 'damage',
+        outerClass: 'w-18',
+      },
+    ],
+  },
 
-  addElement('div', [''], { class: 'mt-4' }),
-  addList('attacks', [
-    addElement('div', ['Attacks'], { class: 'text-xl' }),
-    addInsertButton(),
-    addListGroup([
-      addElement('div', [
-        {
-          $formkit: 'nuxtUIInput',
-          label: 'Name',
-          name: 'name',
-        },
-        {
-          $formkit: 'nuxtUIInput',
-          label: 'Damage',
-          name: 'damage',
-        },
-        addGroupButtons('flex gap-2', '', 'Actions'),
-      ], { class: 'flex gap-2' }),
-    ]),
-  ], true, 'true'),
 ]
 </script>
 
@@ -52,10 +61,10 @@ const schema = [
         FormKit Repeater
       </h1>
       <p class="text-lg text-muted-foreground mb-2">
-        This example demonstrates using FormKit's repeater functionality to manage dynamic lists of items with add, remove, copy, and reorder capabilities.
+        This example demonstrates using FormKit's repeater functionality to manage dynamic lists of items with add, remove, clone, and reorder capabilities.
       </p>
       <p class="text-muted-foreground">
-        Create dynamic form sections where users can add multiple items, copy existing ones, and reorder them using intuitive controls powered by Nuxt UI components.
+        Create dynamic form sections where users can add multiple items, clone existing ones, and reorder them using intuitive controls powered by Nuxt UI components.
       </p>
     </div>
 
@@ -67,7 +76,7 @@ const schema = [
           Dynamic Attack List
         </h2>
         <p class="text-muted-foreground mb-6">
-          Manage a character's attacks with dynamic add, remove, copy, and reorder actions. Each attack can be customized with name and damage values.
+          Manage a fantasy character's attacks with dynamic add, remove, clone, and reorder actions. Each attack can be customized with name and damage values.
         </p>
         <FUDataEdit
           v-if="data"
