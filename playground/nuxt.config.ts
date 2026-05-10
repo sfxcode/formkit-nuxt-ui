@@ -29,11 +29,7 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: [
-        '@vue/devtools-kit',
-        '@vue/devtools-core',
-        '@formkit/core',
         '@formkit/addons',
-        '@formkit/i18n',
       ],
     },
   },
