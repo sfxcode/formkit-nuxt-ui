@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.2
+
+[compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v1.0.1...v1.0.2)
+
+### 🚀 Enhancements
+
+- Add comprehensive forms for checkout, contact, event registration, job application, and user profile as real world examples ([d3d5e12](https://github.com/sfxcode/nuxt-ui-formkit/commit/d3d5e12))
+- Enhance repeater component with improved button handling and dynamic sizing ([d79b194](https://github.com/sfxcode/nuxt-ui-formkit/commit/d79b194))
+- Update repeater sample component with enhanced button configurations and dynamic class assignments ([43a8e04](https://github.com/sfxcode/nuxt-ui-formkit/commit/43a8e04))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.0.1
 
 [compare changes](https://github.com/sfxcode/nuxt-ui-formkit/compare/v0.11.0...v1.0.1)
