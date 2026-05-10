@@ -63,27 +63,27 @@ function addRepeaterHandler(node: FormKitNode): void {
         parentNode.input(parentNode._value.filter((_: any, i: number): boolean => i !== index), false)
       }
     }
-    node.context.addNode = (parentNode: any) => (): void => {
+    node.context.addNode = (parentNode: FormKitNode) => (): void => {
       if (parentNode && parentNode._value instanceof Array) {
         const newArray: any[] = [...parentNode.value, node.context.newItem || {}]
         parentNode.input(newArray, false)
       }
     }
-    node.context.cloneNode = (parentNode: any, index: number) => (): void => {
+    node.context.cloneNode = (parentNode: FormKitNode, index: number) => (): void => {
       if (parentNode && parentNode._value instanceof Array) {
         const item: any = parentNode.value[index]
         const newArray: any[] = [...parentNode.value.slice(0, index), { ...item }, ...parentNode.value.slice(index)]
         parentNode.input([...newArray], false)
       }
     }
-    node.context.moveNodeUp = (parentNode: any, index: number) => (): void => {
+    node.context.moveNodeUp = (parentNode: FormKitNode, index: number) => (): void => {
       if (parentNode && parentNode._value instanceof Array) {
         const array: any[] = [...parentNode.value]
         if (index > 0)
           parentNode.input(swapElements(array, index - 1, index), false)
       }
     }
-    node.context.moveNodeDown = (parentNode: any, index: number) => (): void => {
+    node.context.moveNodeDown = (parentNode: FormKitNode, index: number) => (): void => {
       if (parentNode && parentNode._value instanceof Array) {
         const array: any[] = [...parentNode.value]
         if (index < array.length - 1)
