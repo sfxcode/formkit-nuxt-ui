@@ -74,7 +74,7 @@ describe('addElementsInOuterDiv', () => {
     const outerDiv = addElementsInOuterDiv() as FormKitElement
 
     expect(outerDiv?.$el).toBe('div')
-    expect(outerDiv?.attrs?.class).toBe('formkit-outer ')
+    expect(outerDiv?.attrs?.class).toBe('')
 
     const wrapperDiv = (outerDiv?.children as FormKitElement[])?.[0]
     expect(wrapperDiv?.$el).toBe('div')
@@ -86,18 +86,18 @@ describe('addElementsInOuterDiv', () => {
 
     const innerDiv = (wrapperDiv?.children as FormKitElement[])?.[1]
     expect(innerDiv?.$el).toBe('div')
-    expect(innerDiv?.attrs?.class).toBe('formkit-inner ')
+    expect(innerDiv?.attrs?.class).toBe('')
   })
 
   it('applies custom classes', () => {
     const { addElementsInOuterDiv } = useFormKitSchema()
     const outerDiv = addElementsInOuterDiv([], 'custom-inner', 'custom-outer') as FormKitElement
 
-    expect(outerDiv?.attrs?.class).toBe('formkit-outer custom-outer')
+    expect(outerDiv?.attrs?.class).toBe('custom-outer')
 
     const wrapperDiv = (outerDiv?.children as FormKitElement[])?.[0]
     const innerDiv = (wrapperDiv?.children as FormKitElement[])?.[1]
-    expect(innerDiv?.attrs?.class).toBe('formkit-inner custom-inner')
+    expect(innerDiv?.attrs?.class).toBe('custom-inner')
   })
 })
 
