@@ -1,8 +1,9 @@
 <script setup lang='ts'>
 const data = ref()
+const { addList, addElement, addListGroup, addComponent } = useFormKitSchema()
 
 function createDefaultValue(): object {
-  return { name: 'Bow', damage: '1D6+4' }
+  return { name: 'Sword', damage: '2D6' }
 }
 
 onMounted(() => {
@@ -25,9 +26,8 @@ const schema = [
     name: 'attacks',
     label: 'Attacks',
     help: 'Attacks List Demo - Use Buttons to clone, move and delete',
-    listClass: 'listClass',
-    listItemClass: 'listItemClass flex gap-2',
-    groupClass: 'groupClass flex gap-2',
+    listClass: 'grid gap-2',
+    listItemClass: 'flex gap-2',
     hideButtonGroup: false,
     hideMoveButtons: false,
     displayCloneButton: true,
@@ -37,7 +37,7 @@ const schema = [
     buttonGroupItemClass: 'buttonGroupItemClass',
     buttonSize: 'md',
     insertButtonLabel: 'Add Attack',
-    insertButtonClass: 'mb-2',
+    insertButtonClass: '',
     insertButtonSize: 'lg',
     alwaysDisplayInsertButton: true,
     newItem: createDefaultValue(),
@@ -47,12 +47,14 @@ const schema = [
         label: 'Name',
         name: 'name',
         outerClass: 'w-42',
+        index: '$index',
       },
       {
         $formkit: 'nuxtUIInput',
         label: 'Damage',
         name: 'damage',
         outerClass: 'w-18',
+        index: '$index',
       },
     ],
   },
