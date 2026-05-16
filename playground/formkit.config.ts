@@ -27,6 +27,7 @@ const config: DefaultConfigOptions = {
         // default:
         global: ['outer', 'inner'],
         form: ['form'],
+        nuxtUIRepeater: ['input'],
       },
     ),
     addNuxtAsteriskPlugin,

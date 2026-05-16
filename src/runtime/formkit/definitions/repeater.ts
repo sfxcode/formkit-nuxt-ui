@@ -29,9 +29,10 @@ export const nuxtUIRepeaterDefinition: FormKitTypeDefinition = createInput(
     addList('$listName', [
       addInsertButton('$insertButtonLabel', 'i-lucide-plus', '$insertButtonClass', '$insertButtonSize', '$node.children.length == 0 || $alwaysDisplayInsertButton'),
       addListGroup([
-        addElement('li', [{ children: '$slots.default' }, addButtonGroup('$buttonGroupClass', '$buttonGroupItemClass', '$buttonSize', '$renderButtons')], { class: '$internalListItemClass' })], true, {}),
+        addElement('li', [{ children: '$slots.default' }, addButtonGroup('$buttonGroupClass', '$buttonGroupItemClass', '$buttonSize', '$renderButtons')],
+          { class: '$internalListItemClass' })], true, {}),
     ], true, 'true'),
-  ], { class: '$internalListClass' }),
+  ], { class: '$internalListClass' }, true),
   {
     props: ['insertButtonLabel', 'insertButtonClass', 'insertButtonSize', 'alwaysDisplayInsertButton', 'newItem', 'listClass', 'listItemClass',
       'hideButtonGroup', 'hideMoveButtons', 'buttonGroupClass', 'buttonGroupItemClass', 'buttonSize', 'displayCloneButton', 'displayAddButton', 'displayDeleteButton'],
@@ -53,13 +54,13 @@ function addRepeaterHandler(node: FormKitNode): void {
     node.context.insertButtonSize = node.context.insertButtonSize ? node.context.insertButtonSize : 'md'
     node.context.buttonSize = node.context.buttonSize ? node.context.buttonSize : 'md'
     node.context.renderMoveButtons = !node.context.hideMoveButtons
+    node.context.internalListClass = node.context.listClass ? `formkit-items ${node.context.listClass}` : 'formkit-items'
     node.context.internalListItemClass = node.context.listItemClass ? `formkit-item ${node.context.listItemClass}` : 'formkit-item'
 
     node.context.insertNode = (parentNode: FormKitNode) => (): void => {
       if (parentNode && parentNode._value instanceof Array) {
         const item: object = node.context.newItem ? { ...node.context.newItem } : {}
         const newArray: object[] = [item, ...parentNode._value]
-        parentNode.input([], false)
         parentNode.input(newArray, false)
       }
     }
