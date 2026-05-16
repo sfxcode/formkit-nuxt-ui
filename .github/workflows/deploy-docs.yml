@@ -43,10 +43,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: cd .. && pnpm install --frozen-lockfile
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+        run:  pnpm install --frozen-lockfile
 
       - name: Build with Nuxt
         run: pnpm generate
