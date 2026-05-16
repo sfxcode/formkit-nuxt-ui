@@ -1,7 +1,7 @@
 [build]
   base = "."
-  publish = "playground/.output/public"
-  command = "pnpm install && pnpm dev:prepare && pnpm dev:build"
+command = "pnpm install && pnpm dev:prepare && pnpm dev:build"
+publish = "playground/dist"
 
 [[redirects]]
   from = "/*"
