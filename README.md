@@ -37,6 +37,9 @@ FormKit Nuxt UI bridges the gap between [FormKit](https://formkit.com/)'s powerf
 - `nuxtUISwitch` - Toggle switch for boolean states
 - `nuxtUITextarea` - Multi-line text input with autoresize
 
+🔁 **Repeater Component** - Dynamic repeatable form sections
+- `nuxtUIRepeater` - Create dynamic lists with add, remove, clone, and reorder functionality
+
 📊 **6 Output Components** - Display-only components for read-only data
 - `nuxtUIOutputBoolean` - Boolean display with custom icons
 - `nuxtUIOutputDate` - Formatted date/time display
@@ -50,11 +53,12 @@ FormKit Nuxt UI bridges the gap between [FormKit](https://formkit.com/)'s powerf
 - `FUDataView` - Read-only data display with schema support
 - `FUDataDebug` - Development tool for form debugging
 
-🔧 **Composables** - Reusable form logic
-- `useFormKitInput` - Input component utilities
-- `useFormKitOutput` - Output component utilities
-- `useFormKitRepeater` - Repeatable form sections
-- `useFormKitSchema` - Schema-based form generation
+🔧 **Composables & Utilities** - Reusable form logic
+- `useFormKitSchema` - Schema-based form generation with element builders
+- `useFormKitInput` - Input component utilities and prop handling
+- `useFormKitOutput` - Output component utilities and prop handling
+- `colorConverter` - Color format conversion utilities
+- `durationConverter` - Duration format conversion utilities
 
 🎨 **Full Nuxt UI Integration** - All components respect Nuxt UI theming
 - Color modes (light/dark)
